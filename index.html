@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>丹木涵光</title>
+<meta name="description" content="丹木涵光的个人主页">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --bg-card: #ffffff;
+    --text: #1a1a18;
+    --text-soft: #6b6b66;
+    --line: #e4e4df;
+    --accent: #2f6b4f;
+    --accent-soft: #eaf2ed;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12120f;
+      --bg-card: #1a1a17;
+      --text: #ecece7;
+      --text-soft: #8f8f88;
+      --line: #2b2b26;
+      --accent: #7bbf9a;
+      --accent-soft: #1e2b24;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+                 "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+                 "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 88px 24px 64px;
+  }
+
+  /* 顶部 */
+  .avatar {
+    width: 76px; height: 76px;
+    border-radius: 50%;
+    background: var(--accent-soft);
+    color: var(--accent);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; font-weight: 600; letter-spacing: 1px;
+    margin-bottom: 26px;
+    user-select: none;
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0 0 10px;
+    letter-spacing: -0.02em;
+    font-weight: 650;
+  }
+  .tagline {
+    color: var(--text-soft);
+    font-size: 16px;
+    margin: 0 0 30px;
+  }
+
+  /* 链接按钮 */
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 56px; }
+  .links a {
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 9px 16px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--bg-card);
+    color: var(--text);
+    text-decoration: none;
+    font-size: 14px;
+    transition: border-color .18s, transform .18s;
+  }
+  .links a:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .links a .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+
+  /* 区块 */
+  section { margin-bottom: 48px; }
+  h2 {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-soft);
+    font-weight: 600;
+    margin: 0 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  p { margin: 0 0 14px; }
+  .muted { color: var(--text-soft); font-size: 15px; }
+
+  /* 项目卡片 */
+  .card {
+    display: block;
+    padding: 18px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: 12px;
+    transition: border-color .18s, transform .18s;
+  }
+  .card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .card .name { font-weight: 600; margin-bottom: 4px; }
+  .card .desc { color: var(--text-soft); font-size: 14px; }
+
+  /* 页脚 */
+  footer {
+    margin-top: 72px;
+    padding-top: 22px;
+    border-top: 1px solid var(--line);
+    color: var(--text-soft);
+    font-size: 13px;
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+  footer a { color: var(--text-soft); text-decoration: none; border-bottom: 1px solid var(--line); }
+  footer a:hover { color: var(--accent); border-color: var(--accent); }
+
+  /* 高亮提示（做完可以删） */
+  .todo {
+    background: var(--accent-soft);
+    border-left: 3px solid var(--accent);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+    color: var(--text);
+  }
+  .todo code {
+    background: rgba(127,127,127,.14);
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: ui-monospace, Consolas, monospace;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="avatar">丹</div>
+
+  <h1>丹木涵光</h1>
+  <p class="tagline">这里放一句话介绍你自己 · 比如「正在学编程」或「随便记录点东西」</p>
+
+  <div class="links">
+    <a href="https://github.com/asking925"><span class="dot"></span>GitHub</a>
+    <a href="mailto:494218752@qq.com"><span class="dot"></span>邮箱</a>
+  </div>
+
+  <section>
+    <h2>关于我</h2>
+    <p>我是丹木涵光。这一段可以写你是谁、在做什么、对什么感兴趣。</p>
+    <p class="muted">这段文字只是占位，用记事本打开 index.html 改成你自己的就行，改完重新推一次，网页就更新了。</p>
+  </section>
+
+  <section>
+    <h2>项目</h2>
+    <a class="card" href="https://github.com/asking925">
+      <div class="name">我的 GitHub</div>
+      <div class="desc">所有代码和练习都放在这里</div>
+    </a>
+    <div class="card" style="border-style: dashed;">
+      <div class="name" style="color: var(--text-soft);">（以后有新项目就加一张卡片）</div>
+      <div class="desc">复制上面那段 &lt;a class="card"&gt; 改个链接和文字就行</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>怎么改这个页面</h2>
+    <div class="todo">
+      用记事本打开 <code>index.html</code>，找到想改的中文文字，直接替换保存。<br>
+      然后在项目文件夹里执行 <code>git add .</code> → <code>git commit -m "改内容"</code> → <code>git push</code>，
+      等一分钟刷新网页就能看到变化。这段提示改完可以整段删掉。
+    </div>
+  </section>
+
+  <footer>
+    <span>© <span id="yr">2026</span> 丹木涵光</span>
+    <a href="https://github.com/asking925">github.com/asking925</a>
+  </footer>
+
+</div>
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
