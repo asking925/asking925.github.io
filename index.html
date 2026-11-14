@@ -125,23 +125,6 @@
   }
   footer a { color: var(--text-soft); text-decoration: none; border-bottom: 1px solid var(--line); }
   footer a:hover { color: var(--accent); border-color: var(--accent); }
-
-  /* 高亮提示（做完可以删） */
-  .todo {
-    background: var(--accent-soft);
-    border-left: 3px solid var(--accent);
-    padding: 14px 18px;
-    border-radius: 0 8px 8px 0;
-    font-size: 14px;
-    color: var(--text);
-  }
-  .todo code {
-    background: rgba(127,127,127,.14);
-    padding: 1px 5px;
-    border-radius: 4px;
-    font-size: 13px;
-    font-family: ui-monospace, Consolas, monospace;
-  }
 </style>
 </head>
 <body>
@@ -150,7 +133,7 @@
   <div class="avatar">丹</div>
 
   <h1>丹木涵光</h1>
-  <p class="tagline">这里放一句话介绍你自己 · 比如「正在学编程」或「随便记录点东西」</p>
+  <p class="tagline">随便记录点想法和做过的事</p>
 
   <div class="links">
     <a href="https://github.com/asking925"><span class="dot"></span>GitHub</a>
@@ -159,8 +142,7 @@
 
   <section>
     <h2>关于我</h2>
-    <p>我是丹木涵光。这一段可以写你是谁、在做什么、对什么感兴趣。</p>
-    <p class="muted">这段文字只是占位，用记事本打开 index.html 改成你自己的就行，改完重新推一次，网页就更新了。</p>
+    <p>在学 Git 和前端，慢慢把东西做出来。</p>
   </section>
 
   <section>
@@ -169,19 +151,6 @@
       <div class="name">我的 GitHub</div>
       <div class="desc">所有代码和练习都放在这里</div>
     </a>
-    <div class="card" style="border-style: dashed;">
-      <div class="name" style="color: var(--text-soft);">（以后有新项目就加一张卡片）</div>
-      <div class="desc">复制上面那段 &lt;a class="card"&gt; 改个链接和文字就行</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>怎么改这个页面</h2>
-    <div class="todo">
-      用记事本打开 <code>index.html</code>，找到想改的中文文字，直接替换保存。<br>
-      然后在项目文件夹里执行 <code>git add .</code> → <code>git commit -m "改内容"</code> → <code>git push</code>，
-      等一分钟刷新网页就能看到变化。这段提示改完可以整段删掉。
-    </div>
   </section>
 
   <footer>
